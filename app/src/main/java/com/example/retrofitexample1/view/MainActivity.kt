@@ -26,11 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
 
-        viewModel.tasks.observe(this, Observer {tasksList ->
-            tasksAdapter = TasksAdapter(tasksList)
-            rvTasks.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-            rvTasks.adapter = tasksAdapter
-        })
 
         initComponents()
         initUI()
@@ -42,8 +37,11 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun initUI() {
-
-
+        viewModel.tasks.observe(this, Observer {tasksList ->
+            tasksAdapter = TasksAdapter(tasksList)
+            rvTasks.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+            rvTasks.adapter = tasksAdapter
+        })
 
     }
 }
