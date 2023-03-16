@@ -7,3 +7,10 @@ Elementos utilizados en la app:
 * ViewModel y LiveData
 * RecyclerView
 * ViewBinding
+
+
+
+|                               Pantalla principal                               |
+:------------------------------------------------------------------------------:
+                                                                
+|  <img src="./readme_images/app.png" style="height: 50%; width:50%;"/>  
