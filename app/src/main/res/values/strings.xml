@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Retrofit Example1</string>
+    <string name="todos">Todos</string>
+</resources>
